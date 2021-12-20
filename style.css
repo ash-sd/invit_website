@@ -16,11 +16,11 @@
   border-radius: 10px;
 }
 body{
-  overflow-x: hidden; /* IDEA: elements will not overlap on the horizonal x's */
+  overflow-x: hidden;
 }
 .container{
   position: relative;
-  max-width: 1800px; /* IDEA: gave the page a max width of 1800 and centerd it using auto on right n left */
+  max-width: 1800px;
   margin-left: auto;
   margin-right: auto;
   width:100%;
@@ -83,7 +83,7 @@ header{
   color:white;
   font-weight: lighter;
   margin-top:40px;
-  margin-left:200px;
+  margin-left:35%;
   /*max-width: 100%;*/
 }
 .header-image{
@@ -120,10 +120,13 @@ header{
   display: inline-block;
 }
 .sponsors {
-  width:100%;
+  display:flex;
   margin-top:90px;
   margin-left: 9%;
   margin-right: 9%;
+  align-items:center;
+  max-height: 100%;
+  width:100%;
 }
 .sponsors img {
   /*align-items:center;*/
@@ -283,22 +286,20 @@ header{
 .img-container{
 }
 .gallery{
-  justify-content: left;
+  justify-content:flex-end;
   display:flex;
   width:90%;
   margin-left:10%;
   margin-right: 10%;
   flex-wrap: wrap;
 }
+
 .gallery-item{
-  display:block;
   flex-basis: 100%;
 }
 .img-container{
   margin-right:10%;
   align-items: center;
-
-
 }
 .img-container img{
   width: 95%;
@@ -327,6 +328,12 @@ header{
 
 }
 @media only screen and (max-width:1580px){
+  .sponsors{
+    display:none;
+  }
+  .sub_main_content{
+    margin-top:120px;
+  }
   .copyright{
     text-align: center;
     margin-top:4%;
@@ -395,6 +402,12 @@ header{
   .copyright{
     font-size:12px;
   }
+  .right_image{
+    display:none;
+  }
+  .left_image{
+    display:none;
+  }
 }
 @media only screen and (max-width:896px){
   .nav{
@@ -409,12 +422,6 @@ header{
   }
   .header-info{
     font-size:13px;
-  }
-  .right_image{
-    display:none;
-  }
-  .left_image{
-    display:none;
   }
   .some_button{
     margin-left:-5px;
@@ -453,5 +460,11 @@ header{
   }
   .copyright{
     margin-top:40px;
+  }
+  .logo{
+    margin-left: 20%;
+  }
+  .col{
+    padding-left:10px;
   }
 }
