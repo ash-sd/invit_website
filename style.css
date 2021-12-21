@@ -18,22 +18,14 @@
 body{
   overflow-x: hidden;
 }
-.container{
-  position: relative;
-  max-width: 1800px;
-  margin-left: auto;
-  margin-right: auto;
-  width:100%;
-}
 
 .space_box{
   margin-top: 5%;
 }
-header{
+/*header{
   position: relative;
-}
+}*/
 .nav {
-  top: 0;
   position: relative;
   background: #fff;
   width: 100%;
@@ -164,14 +156,11 @@ header{
 }*/
 .sub_main_content{
   display:flex;
-
 }
 .service-info strong{
   font-size: 16px;
 }
 .service-info{
-  vertical-align: top;
-  text-align:left;
   display:inline-block;
   width: 600px;
   margin-left:5%;
@@ -244,9 +233,9 @@ header{
 .col{
   width:15%;
   height:250px;
-  display: inline-block;
+  display: inline-flex;
   padding-left:40px;
-  vertical-align: bottom;
+  /*vertical-align: bottom;*/
 }
 .col-box h3{
   margin-bottom: 1rem;
@@ -283,8 +272,8 @@ header{
   margin-right: 10%;
   color:#949494;
 }
-.img-container{
-}
+/*.img-container{
+}*/
 .gallery{
   justify-content:flex-end;
   display:flex;
