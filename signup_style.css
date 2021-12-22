@@ -8,10 +8,10 @@ body{
 }
 #body-wrapper{
   position:absolute;
-  margin-left:37%;
-  margin-right:40%;
-  margin-top:5%;
-  width: 470px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 430px;
   background: white;
   border-radius:10px;
 }

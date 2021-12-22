@@ -5,6 +5,11 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+.body-wrapper{
+  width:80%;
+  margin:auto;
+}
+
 .black_box{
   align-items: center;
   width: 80%;
@@ -28,13 +33,13 @@ body{
 .nav {
   position: relative;
   background: #fff;
-  width: 100%;
   border-bottom: 1px solid #e7e7e7;
 }
 .login-signup{
   margin-top: 20px;
   margin-right: 8%;
   float:right;
+  display:inline;
 }
 #login{
   cursor: pointer;
@@ -101,7 +106,8 @@ body{
 header{
   background: #fafafa;
 }
-.logo{
+.logo h1{
+  font-weight: lighter;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-top: 20px;
