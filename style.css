@@ -71,10 +71,14 @@ button{
   display:flex;
   align-items: center;
   justify-content: center;
-  margin:20px;
+  margin-left:220px;
+
 }
 .sponsors img{
-  margin:10px;
+  width:100%;
+  height:100%;
+  margin:20px;
+
 }
 .secondContainer{
   display:flex;
@@ -102,25 +106,8 @@ button{
 .text h1{
   margin-bottom:20px;
 }
-.imgContainer{
-  display:flex;
-  margin-top:10px;
-  justify-content: center;
 
 
-}
-
-.set{
-  margin:10px;
-  flex-wrap: wrap;
-  flex-direction: row;
-
-
-}
-.set img{
-  margin-bottom:10px;
-
-}
 .footer{
   background:black;
   border-radius: 7px;
@@ -158,4 +145,112 @@ button{
   justify-content: center;
   margin-top:-20px;
   margin-bottom:25px;
+}
+.imgContainer{
+  display:flex;
+  margin-top:10px;
+  justify-content:center;
+  align-items: center;
+
+}
+.set{
+  margin:10px;
+
+}
+.set img{
+  margin-bottom:20px;
+}
+@media only screen and (min-width: 1000px;){
+  .imgContainer{
+    display:flex;
+    margin-top:10px;
+    justify-content:center;
+    align-items: center;
+
+  }
+
+
+}
+
+@media only screen and (max-width: 1200px){
+  .fixedImg{
+    display:none;
+  }
+  .leftImage{
+    display:none;
+  }
+  .rightImage{
+    display:none;
+  }
+  .rewards{
+    margin: 0 20%;
+  }
+  .sponsors{
+    display:none;
+  }
+  .footer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .leftHalf{
+    margin-bottom:80px;
+  }
+  .text{
+    text-align: center;
+  }
+  .imgContainer{
+    display:flex;
+    margin-top:10px;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+  .imgContainer img{
+    width:90%;
+
+  }
+  .set img{
+  }
+
+}
+@media only screen and (max-width: 900px){
+.nav{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.leftnav{
+  margin-bottom: 20px;
+}
+
+}
+@media only screen and (max-width: 720px){
+  .leftnav{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar{
+    margin-left:0;
+    margin-top:15px;
+  }
+  .footer{
+    align-items: flex-start;
+    padding:5%;
+    font-size: 14px;
+  }
+  .footerNav{
+    margin-right:0px;
+  }
+  .container{
+    width:90%;
+  }
+  .promo{
+    margin-bottom:20px;
+  }
+
 }
